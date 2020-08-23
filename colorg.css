@@ -1,0 +1,82 @@
+body{
+	font-family: "Montserrat";
+
+	background-color: #232323;
+	margin: 0;
+}
+.square{
+	border-radius: 60%; 
+	width: 30%;
+	padding-bottom: 30%;
+	background: purple;
+	float:left;
+	margin: 1.66%;
+	transition: background 0.5s; /*only when bg changes,change*/
+	/*transition prop doesn't work on all browsers, solution:- */
+	-webkit-transition: background 0.5s; /*webkit is an engine used by safari*/
+	-moz-transition: background 0.5s; /* for mozilla*/
+}
+
+#container{
+	margin: 10px auto; 
+	max-width: 600px;
+}
+
+#layer{
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+h1{	
+	line-height: 1.1;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin: 0;
+	background: steelblue;
+	text-align: center; 
+	color: white;
+	padding: 20px 0;
+}
+
+#col_disp{
+	color: white;
+	font-size: 200%;
+}
+
+span{
+	color: black;
+}
+
+.selected
+{
+	color: white;
+	background: steelblue;
+}
+
+button{
+	color: steelblue;
+	font-weight: 700;
+	font-size : inherit; 
+	text-transform: uppercase;
+	border: none;
+	background: none;
+	height: 100%; /*take up 100% of containing tag;*/
+	/*transition when button is hovered over*/
+	transition: all 0.5s; /*param1: when any prop changes,change ; param2: duration*/
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	outline : none;/*remove the outline from the button*/
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
+
+#message
+{
+	display: inline-block; /* get block space for the message*/
+	width: 20%;
+}
